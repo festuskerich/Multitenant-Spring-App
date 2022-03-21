@@ -1,0 +1,10 @@
+version: '3.4'
+
+services:
+  multitenant:
+    image: multitenant
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    ports:
+      - 3009:3009
